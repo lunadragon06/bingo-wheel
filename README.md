@@ -2,7 +2,7 @@
 <img src="/assets/screenshot.png" alt="Mockup of Bingo-wheel App">
 <h2>Project brief</h2>
 I was tasked at my current workplace to create a bingo app based on the user needs of the employees as a starting point. The purpose of this simple bingo application was to create a digital replacement of the traditional bingo cage.  
-<br>To view and try out live-demo of this prototype version of this application, <a href="https://www.bingowheel.netlify.app">click here</a>. <br><br>
+<br><br>To view and try out live-demo of this prototype version of this application, <a href="https://www.bingowheel.netlify.app">click here</a>. <br><br>
 <h2>Details</h2>
 <b>Bingo wheel</b> is a single-paged app built with Vanilla JavaScript only, where the JavaScript code will be improved to optimize the app´s speed and usability. There exsist a plan to further develop and/or organize more both JS and LESS CSS code.   
 <br><br>
