@@ -97,7 +97,6 @@ function sortNumber() {
 }
 
 function previousNumbers() {
-  const colorCode = document.querySelector(".bingo_number-orders_item");
     let orderList = `<h2>Trekkefølge:</h2>
                     <ul class="bingo_number-orders">${selectedNumbers.map(data =>
                         `<li class="bingo_number-orders_item">${data}</li>`).join('')}
