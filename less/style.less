@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"); 
+
+@background-color: rgb(242 174 48 / 30%); 
+@ball: 50%;
+@bingo-columns: column;
+@bingo-rows: row;
+@border: 10px;
+@button-animation: all 0.5s ease 0s;
+@drawn-ball-color: #b60000; 
+@default-layout: flex;
+@font-style: bold;
+@light: #ffffff;
+@mobile-size: 500px;
+@mobile-width: 100%;
+@no-styling: none;
+@number-animation: .5s;
+@padding: 25px;
+@text-color: #7a0202; 
+@typography: "Quicksand", sans-serif;
+@unset: 0; 
+@white-space: center;
+
+.border-radius(@radius) {
+    border-radius: @radius;
+}
+
+.padding(@padding) {
+    padding: @padding;
+}
+
+
+html {
+    font-family: @typography
+}
+
+body {
+    background: @background-color;
+    padding: @padding;
+}
+
+h1,
+h2 {
+    color: @text-color;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: @white-space;
+}
+
+/* Nåværende tall-visning */
+h1 {  
+    font-size: 70px; 
+}
+
+.number {
+    align-items: @white-space;
+    border-radius: @ball;
+    display: @default-layout;
+    height: 200px;
+    justify-content: @white-space;
+    margin: 30px auto;
+    padding: @border;
+    width: 200px;
+}
+
+/* UI komponenter - scrollbar*/
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #ffc964;
+    border-radius: @border;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff9500; 
+    border-radius: @border;
+}
+
+/* UI komponenter - knapper */
+button { 
+    border: @no-styling; 
+    border-radius: @border;
+    cursor: pointer; 
+    font-family: @typography; 
+    font-weight: @font-style;
+    height: 40px;
+    letter-spacing: 1px;
+    transition: @button-animation; 
+    width: 150px;
+}
+
+.number_shuffle {
+    background: rgb(79 210 186 / 75%);
+    color: #01341E;
+
+    &:focus,
+    &:hover {
+        background: rgb(79 210 186); 
+    }
+}
+
+.number_restart {
+    background: rgb(242 46 82);
+    color: @light;
+
+    &:focus, 
+    &:hover {
+        background: rgb(255, 0, 47);
+    }
+}
+
+/* Knappegrupper - talltrekk */
+.number_generator {
+    display: @default-layout;
+    gap: 20px;
+    justify-content: @white-space;
+    margin-bottom: 30px;
+}
+
+/* Knappegrupper - timer */
+.display {
+    display: @default-layout;
+    gap: 20px;
+    justify-content: @white-space;
+}
+
+.display_clock {
+    background: rgb(255 166 0 / 25%);
+    color: @text-color;
+    text-align: @white-space;
+    pointer-events: @no-styling;
+    width: 100px;
+} 
+
+.display_alt-btns {
+    background: rgb(79 210 186 / 50%);
+    color: #01341E;
+    width: 200px;
+} 
+
+/* BINGO REKKER */
+.bingo {
+    background: rgb(255 166 0 / 20%);
+    border-radius: 15px;
+    margin: 0 auto 50px;
+    width: 925px;
+}
+
+.bingo_numbers {
+    display: @default-layout;
+    flex-direction: @bingo-columns;
+    align-items: @white-space;
+    justify-content: @white-space;
+    margin: 0 auto;
+}
+
+.column {
+    align-self: start;
+    text-align: @white-space;
+    margin: 15px auto 0;
+    display: @default-layout;
+    flex-direction: @bingo-rows;
+    gap: 15px;
+
+    &:last-child {
+        margin-bottom: 20px;
+    }
+}
+/* fra js for-loop */
+.bingo_number {
+    background: #FFA600;
+    color: #4a0404;
+    letter-spacing: 1px;
+    width: 45px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: @font-style;
+    border-radius: @ball;
+    transition: @number-animation;
+
+    /* trekte tall */
+    &.drawn {
+        background: @drawn-ball-color;
+        color: @light;
+        transition: @number-animation;
+    }
+}
+
+/* tidligere trekte tall */
+.bingo_previous-numbers {
+    margin: 0 auto 25px;
+    width: 925px;
+}
+
+ul {
+    display: @default-layout;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: @white-space;
+    list-style: @no-styling;
+    padding: @unset;
+
+    li {
+        background: #ff983d;
+        border-radius: @ball;
+        color: #4a0404;
+        font-weight: @font-style;
+        line-height: @padding;
+        height: @padding;
+        padding: @border;
+        text-align: @white-space;
+        width: 30px;
+    }
+}
+
+/* RESPONSIV DESIGN */
+@media (max-width: 991px) {
+    button, 
+    .display button {
+        width: @mobile-width;
+    }
+    .bingo, 
+    .display, 
+    .number_generator {
+        width: 379px;
+    }
+    .bingo_numbers {
+        flex-direction: @bingo-rows;
+    }
+    .bingo_previous-numbers  {
+        width: 375px;
+    }
+    .column {
+        flex-direction: @bingo-columns;
+        margin: 15px;
+    }
+    .display {
+        margin: 0 auto;
+    }
+    .number_generator {
+        margin: 0 auto 30px;
+    }
+}
+
+/* mobilutgave */
+@media (max-width: @mobile-size) {
+    .bingo, 
+    .bingo_previous-numbers, 
+    .display, 
+    .number_generator {
+        width: @mobile-width;
+    }
+    .bingo {
+        margin-bottom: 40px;
+    }
+    .bingo_numbers {
+        height: 125px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding: 10px 0 5px;
+    }
+    .bingo_number {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 12px;
+        transition: @no-styling;
+    }
+    .bingo_previous-numbers {
+        margin-bottom: @unset;
+    }
+    .column {
+        gap: @border;
+        margin: @border;
+    }
+    .drawn {
+        transform: @no-styling !important;
+    }
+    .number {
+        height: 175px;
+        width: 175px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    ul li {
+        font-size: 12px;
+        height: 15px;
+        line-height: 15px;
+        width: 20px;
+    }
+}
