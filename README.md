@@ -37,17 +37,42 @@ UI design, frontend development and running user tests.
 </ul>
 <br>
 <h2>Behind the scenes</h2>
-A little insight into the process behind building this application:
+<img src="/assets/repoassets/processline.png" alt="Process presentation">
+...
 <br><br>
 <h3>01. Exploration</h3>
-...
-<br>
+Through a prioritization matrix, it was determined and focused on which functions should be prioritized to be created before I began to outline the layout of the bingo game, which was primarily based on the task descriptions I received from Framom. 
+<img src="/assets/repoassets/matrix.png" alt="Priority matrix">
 <h3>02. Ideation</h3>
-...
-<br>
+From sketching phase of this project, I tried to outline its information architecture and an interface that looked a bit like the analogue bingo scheme we use when we're playing bingo as a starting point, in an attempt to mimic a bit the real experience of our version of our bingo game. 
+<br><br>
+<img src="/assets/repoassets/IA.png" alt="Information Architecture">
+This particular app has undergone some UI changes related to its color palette, and button tweaks here and there from this stage, to further improve the entire structure and interactions of the application.
 <h3>03. Design</h3>
-...
+<img src="/assets/repoassets/IA.png" alt="Wireframe and Prototype">
+This prototype version underwent its first user test with a limited number of users. The user test was carried out on 4-5 users who were employees at Framom.
+<br><br>
+<b>📋 Task description</b>
 <br>
+Trial the interactive prototype of this bingo game with basic features on big screen.
+<br><br>
+<b>🏅 Goal of this task</b>
+<br>
+Understand the users' level of focus and responsiveness when we play bingo, and in this way test the user interface of it.
+<br><br>
+<b>🔎 Observations</b>
+<br>
+<ul>
+  <li>Most users found the design to be clean with an efficient user experience.</li>
+  <li>Some of the users did not quite understand the point of having a «timer» when the auto-draw function was not included in addition to manual number draw.</li>
+  <li>Participants in the user test also requested after automatic number reader of numbers that are drawn.</li>
+</ul>
+<b>🛠️ Further measurements</b>
+<br>
+<ul>
+  <li>Implement auto-draw of numbers that shows when the next numbers will be drawn through a progress bar.</li>
+  <li>Add number reader when other additional functions mentioned above are implemented.</li>
+</ul>
 <h3>04. Development</h3>
 ...
 <br><br><br>
