@@ -38,10 +38,9 @@ UI design, frontend development and running user tests.
 <br>
 <h2>Behind the scenes</h2>
 <img src="/assets/repoassets/processline.png" alt="Process presentation">
-...
-<br><br>
 <h3>01. Exploration</h3>
-Through a prioritization matrix, it was determined and focused on which functions should be prioritized to be created before I began to outline the layout of the bingo game, which was primarily based on the task descriptions I received from Framom. 
+Through a prioritization matrix, it was determined and focused on which functions should be prioritized to be created before I began to outline the layout of the bingo game, which was primarily based on the task descriptions I received from Framom.
+<br><br>
 <img src="/assets/repoassets/matrix.png" alt="Priority matrix">
 <h3>02. Ideation</h3>
 From sketching phase of this project, I tried to outline its information architecture and an interface that looked a bit like the analogue bingo scheme we use when we're playing bingo as a starting point, in an attempt to mimic a bit the real experience of our version of our bingo game. 
@@ -49,12 +48,12 @@ From sketching phase of this project, I tried to outline its information archite
 <img src="/assets/repoassets/IA.png" alt="Information Architecture">
 This particular app has undergone some UI changes related to its color palette, and button tweaks here and there from this stage, to further improve the entire structure and interactions of the application.
 <h3>03. Design</h3>
-<img src="/assets/repoassets/IA.png" alt="Wireframe and Prototype">
-This prototype version underwent its first user test with a limited number of users. The user test was carried out on 4-5 users who were employees at Framom.
+<img src="/assets/repoassets/mockups.png" alt="Wireframe and Prototype">
+The prototype version (image shown above to the right, wireframe to the left) underwent its first user test with a limited number of users. The user test was carried out on 4-5 users who were employees at Framom.
 <br><br>
 <b>📋 Task description</b>
 <br>
-Trial the interactive prototype of this bingo game with basic features on big screen.
+Test out the interactive prototype of this bingo game with basic features on big screen.
 <br><br>
 <b>🏅 Goal of this task</b>
 <br>
@@ -74,12 +73,20 @@ Understand the users' level of focus and responsiveness when we play bingo, and 
   <li>Add number reader when other additional functions mentioned above are implemented.</li>
 </ul>
 <h3>04. Development</h3>
-...
+As more features were added, the code set of this application grew in pace. Eventually it also became useful (and necessary) to split code into different modules/files and reuse it trough import-export method:
+<br><br>
+<img src="/assets/repoassets/workspace.png" alt="Workspace snippet of today's design solution of this bingoapp">
+The final (so far) version of this app was built in Editor X - which is the platform Framom currently uses, where I was able to extend the functionalities of this application by adding JavaScript code in Editor X Velo. Today's final solution looks like this for now: 
+<br><br>
+<img src="/assets/repoassets/final-livesite.png" alt="Today's design solution of bingoapp">
+<b>Note:</b> The audio code snippet to this app are not working quite as expected at the moment and are under debugging.
 <br><br><br>
 <h2>Contribution</h2>
 To contribute to this project, please create a new branch that can be reviewed and merged. All constructive feedback will be well appreciated, and thank you in advance!
 <br><br>Otherwise, enjoy and have fun! And let´s play bingo 🖍️<br><br>
 <br>
 <h2>Acknowledgements</h2>
-I would like to thank <b>Framom byrå</b> for giving me the first opportunity to immerse myself more into app design- and development, and to create the first functional app I ever created - which will be and is actually put in use 🙏  
+I would like to thank <b>Framom byrå</b> for giving me the first opportunity to immerse myself more into app design- and development, and to create the first functional app I ever created - which will be and is actually put in use! And I also would like to give special thanks to my mentor <b>Christel Hustoft</b> for professional input, feedback and support throughout the course of this project so far.
+<br>
+🙏
 <br><br><br>
